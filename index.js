@@ -20,15 +20,15 @@ app.get("/about", (req, res) => {
   res.send("This is about page");
 });
 
-// app.get("/blog", (req, res) => {
-//   res.send("Ini halaman blog");
-// });
-
-app.get("blog/:judul", (req, res) => {
-  const judulBlog = req.params.judul;
-  console.log(judulBlog);
-  res.send("Anda sedang membaca artikel: " + judulBlog);
+app.get("/blog", (req, res) => {
+  res.send("Ini halaman blog");
 });
+
+// app.get("/blog/:judul", (req, res) => {
+//   const judulBlog = req.params.judul;
+//   console.log(judulBlog);
+//   res.send("Anda sedang membaca artikel: " + judulBlog);
+// });
 
 app.get("*", (req, res) => {
   res.send("halaman tidak ditemukan");
