@@ -28,6 +28,11 @@ app.get("/blog/:judul", (req, res) => {
   res.send("Anda sedang membaca blog dengan judul: " + judulBlog);
 });
 
+app.get("/blog/:category/:judul/:author", (req, res) => {
+  const { category, judul, author } = req.params;
+  res.send(`Blog dengan kategori : ${category} | Author: ${author} | ${judul}`);
+});
+
 // app.get("/blog/:judul", (req, res) => {
 //   const judulBlog = req.params.judul;
 //   console.log(judulBlog);
