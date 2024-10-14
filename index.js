@@ -20,7 +20,7 @@ app.get("/about", (req, res) => {
   res.send("This is about page");
 });
 
-app.get("/blog", (req, res) => {
+app.get("/blog/:judul", (req, res) => {
   res.send("Ini halaman blog");
 });
 
