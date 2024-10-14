@@ -24,7 +24,8 @@ app.get("/blog", (req, res) => {
 });
 
 app.get("/blog/:judul", (req, res) => {
-  res.send("Ini halaman blog");
+  const judulBlog = req.params.judul;
+  res.send("Anda sedang membaca blog dengan judul: " + judulBlog);
 });
 
 // app.get("/blog/:judul", (req, res) => {
