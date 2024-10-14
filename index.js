@@ -19,6 +19,9 @@ app.get("/cats", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("This is about page");
 });
+app.get("/blog", (req, res) => {
+  res.send("Ini halaman blog");
+});
 
 app.get("/blog/:judul", (req, res) => {
   res.send("Ini halaman blog");
