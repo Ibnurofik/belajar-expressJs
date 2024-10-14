@@ -9,7 +9,7 @@ const app = express();
 // localhost:8080/cats - mengirim string
 
 app.get("/", (req, res) => {
-  res.send("This is homepage");
+  res.send("This is homepage dengan nodemon yang sudah direvisi");
 });
 
 app.get("/cats", (req, res) => {
